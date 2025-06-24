@@ -1,1 +1,10 @@
-<li><a class="{{ Request::routeIs($route) ? "active" : "" }}" href="{{ route($route) }}"> {{ $slot }}</a></li>
+@props(['route' => null])
+
+<li>
+    <a {{ $attributes->merge([
+        'href' => $route ? route($route) : '#',
+        'class' => $route && Request::routeIs($route) ? 'active' : ''
+    ]) }}>
+        {{ $slot }}
+    </a>
+</li>

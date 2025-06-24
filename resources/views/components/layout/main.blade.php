@@ -35,6 +35,16 @@
         @foreach($navItems as $navItem)
             <x-ui.navbar-item :route="$navItem['route']">{{ $navItem['title'] }}</x-ui.navbar-item>
         @endforeach
+
+        <!-- Logout -->
+        <x-ui.navbar-item>
+            <form method="POST" action="{{ route('logout') }}" style="all: unset; display:inline;">
+                @csrf
+                <button type="submit" style="all: unset; background:none; border:none;cursor:pointer; color: inherit; font: inherit;">
+                    LogOut
+                </button>
+            </form>
+        </x-ui.navbar-item>
     </x-ui.navbar>
 </header>
 

@@ -37,14 +37,14 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: right;
-    padding-right: 20px;
+    padding-right: 50px;
     margin: 0;
 }
 
 /* Navigation menu list items */
 
 nav ul li {
-    margin-right: 20px;
+    margin-right: 1px;
 }
 
 /* Links styling */
@@ -52,10 +52,10 @@ nav ul li {
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 10px 17px;
     display: block;
     border-radius: 30px;
-    font-size: 17.5px;
+    font-size: 17px;
 }
 
 /* Links hover and active styles */
