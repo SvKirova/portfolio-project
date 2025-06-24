@@ -1,0 +1,73 @@
+img {
+    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.5));
+}
+
+/* Top part of the page - profile pic and general information */
+
+#pic-in-container {
+    margin: 20px;
+    padding: 0;
+}
+
+#about-me {
+    margin: 10px;
+}
+
+#personal-info,
+#characteristics {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.text-in-container {
+    font-family: 'Silkscreen', serif;
+    font-size: 20px;
+    float: right;
+    text-align: center;
+    margin-right: 60px;
+}
+
+.text-in-container ul li {
+    margin: 0;
+    padding-bottom: 5px;
+    text-align: left;
+    font-family: 'Tomorrow', serif;
+    font-weight: bold;
+    font-size: 21px;
+    letter-spacing: 2px;
+}
+
+/* Bottom part of the page - paragraphs with description of me and collage */
+
+#collage {
+    float: right;
+    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.5));
+    padding: 0;
+    margin-top: 60px;
+    margin-right: 50px;
+}
+
+.paragraphs {
+    float: left;
+    width: 65%;
+    font-family: 'Tomorrow', serif;
+    font-weight: bold;
+    font-size: 21px;
+    letter-spacing: 2px;
+    text-align: justify;
+}
+
+.para {
+    margin: 50px 0 0 20px;
+    padding-bottom: 2px;
+    text-align: justify;
+    font-family: 'Tomorrow', serif;
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+
+.information-about-me {
+    overflow: hidden;
+}

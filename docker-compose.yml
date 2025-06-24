@@ -1,0 +1,44 @@
+services:
+    web:
+        build: .
+        container_name: portfolio-web
+        ports:
+            - "8080:80"
+        volumes:
+            - .:/var/www/html
+        environment:
+            - DB_HOST=db
+            - DB_DATABASE=${DB_DATABASE}
+            - DB_USERNAME=${DB_USERNAME}
+            - DB_PASSWORD=${DB_PASSWORD}
+        env_file:
+            - ./.env
+        depends_on:
+            - db
+        networks:
+            - portfolio-app
+        working_dir: /var/www/html
+
+    db:
+        image: mysql:8.0
+        container_name: mysql-db
+        ports:
+            - "3306:3306"
+        environment:
+            - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
+            - MYSQL_DATABASE=${DB_DATABASE}
+            - MYSQL_USER=${DB_USERNAME}
+            - MYSQL_PASSWORD=${DB_PASSWORD}
+        env_file:
+            - ./.env
+        volumes:
+            - mysql_data:/var/lib/mysql
+        networks:
+            - portfolio-app
+
+volumes:
+    mysql_data:
+
+networks:
+    portfolio-app:
+

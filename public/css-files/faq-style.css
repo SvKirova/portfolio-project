@@ -1,0 +1,210 @@
+#wrap-content {
+    min-height: 100vh;
+}
+
+#faq-title {
+    font-family: 'Silkscreen', serif;
+    margin: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#faq-pic {
+    float: right;
+    margin: 60px 30px 0 0;
+    width: 240px;
+    height: 240px;
+    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.5));
+}
+
+/* The questions + their answers */
+
+details {
+    background-color: rgb(18, 81, 60);
+    color: #fff;
+    font-size: 22px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.147), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    letter-spacing: 2px;
+    width: 78%;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+details[open] summary {
+    border-bottom: 1px solid rgb(0, 125, 83);
+}
+
+details[open] summary:after {
+    content: "\00D7";
+}
+
+details[open] div {
+    padding: 0 50px 20px;
+    text-align: justify;
+}
+
+/* The questions */
+
+summary {
+    padding: 15px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Silkscreen', serif;
+    font-style: normal;
+}
+
+summary:after {
+    content: "\002B";
+    font-family: 'Tomorrow', serif;
+    font-weight: bold;
+}
+
+/* The answers */
+
+div ol li {
+    margin-bottom: 10px;
+}
+
+div p {
+    margin-bottom: 0;
+}
+
+div p a {
+    text-decoration: none;
+    color: rgb(160, 249, 219);
+    font-weight: bold;
+    font-style: italic;
+}
+
+button, #create-button, #edit-button, #delete-button {
+    padding: 10px;
+    width: 20%;
+    background-color: rgba(209, 251, 208, 0.704);
+    font-weight: bold;
+    color: rgb(18, 81, 60);
+    font-family: 'Silkscreen', serif;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 3px solid rgb(18, 81, 60);
+    text-align: center;
+    margin: 5px 40% 10px 40%;
+}
+
+#edit-button, #delete-button {
+    margin: 0 10px 10px 20px;
+    width:10%;
+}
+
+#create-button:hover, #edit-button:hover, #delete-button:hover, button:hover {
+    background-color: rgb(241, 254, 249);
+}
+
+#faq-separator {
+    margin-top: 20px;
+    border: 0;
+    height: 2px;
+    background-color: rgb(25, 124, 90);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-cancel, .modal-delete {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.modal-cancel:hover, .modal-delete:hover {
+    opacity:1;
+}
+
+/* Float cancel and delete buttons and add an equal width */
+.modal-cancel, .modal-delete {
+    float: left;
+    width: 50%;
+}
+
+/* Add a color to the cancel button */
+.modal-cancel {
+    background-color: #ccc;
+    color: black;
+}
+
+/* Add a color to the delete button */
+.modal-delete {
+    background-color: #f44336;
+}
+
+/* Add padding and center-align text to the container */
+.modal-container {
+    padding: 16px;
+    text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #04AA6D;
+    padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+form {
+    background-color: whitesmoke;
+    width: 90%;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
+}
+
+#wrap-faq {
+    margin-bottom: 40px;
+}
+
+form h1 {
+    font-family: 'Silkscreen', serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+form p {
+    margin: 0;
+    text-align: justify;
+    font-family: 'Tomorrow', serif;
+    font-weight: bold;
+    font-size: 21px;
+    letter-spacing: 2px;
+    width: 740px;
+    padding: 15px;
+}

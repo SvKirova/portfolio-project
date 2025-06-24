@@ -1,0 +1,206 @@
+button, #cancel-button {
+    padding: 10px;
+    width: 160px;
+    background-color: rgba(209, 251, 208, 0.704);
+    font-weight: bold;
+    color: rgb(18, 81, 60);
+    font-family: 'Silkscreen', serif;
+    border-radius: 5px;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 15px;
+    cursor: pointer;
+    border: 3px solid rgb(18, 81, 60);
+    text-decoration: none;
+}
+
+#cancel-button:hover, #reset-button:hover, #edit-button:hover,
+#delete-button, button:hover {
+    background-color: rgb(241, 254, 249);
+}
+
+.container {
+    overflow: hidden;
+}
+
+#line {
+    margin: 0;
+}
+
+.page-heading {
+    font-family: 'Silkscreen', serif;
+    font-size: 45px;
+    text-align: center;
+}
+
+.text {
+    font-family: 'Silkscreen', serif;
+    font-size: 20px;
+    float: right;
+    text-align: center;
+    margin-right: 60px;
+}
+
+.text p {
+    margin: 0;
+    text-align: justify;
+    font-family: 'Tomorrow', serif;
+    font-weight: bold;
+    font-size: 21px;
+    letter-spacing: 2px;
+    width: 740px;
+    padding: 15px;
+}
+
+.image-stack {
+    float: left;
+}
+
+img {
+    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.5));
+}
+
+.post-pic {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 180px;
+    padding: 0;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #093a17;
+    border-radius: 4px;
+    font-size: 17px;
+    box-sizing: border-box;
+}
+
+label {
+    font-size: 17px;
+}
+
+form {
+    background-color: whitesmoke;
+    width: 90%;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
+}
+
+#form-title, #form-sub {
+    font-family: 'Silkscreen', serif;
+}
+
+#save-button, #reset-button, #cancel-button,
+#edit-button, #back-button, #delete-button{
+    display: inline-block;
+    margin: 5px;
+}
+
+#group-buttons {
+    margin-top: 10px;
+}
+
+#reset-button, #edit-button {
+    background-color: rgba(253, 240, 139, 0.7);
+}
+
+#cancel-button, #delete-button {
+    background-color: rgb(239, 212, 212);
+}
+
+.modal-cancel, .modal-delete {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.modal-cancel:hover, .modal-delete:hover {
+    opacity:1;
+}
+
+/* Float cancel and delete buttons and add an equal width */
+.modal-cancel, .modal-delete {
+    float: left;
+    width: 50%;
+}
+
+/* Add a color to the cancel button */
+.modal-cancel {
+    background-color: #ccc;
+    color: black;
+}
+
+/* Add a color to the delete button */
+.modal-delete {
+    background-color: #f44336;
+}
+
+/* Add padding and center-align text to the container */
+.modal-container {
+    padding: 16px;
+    text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #04AA6D;
+    padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.is-invalid {
+    border: 2px solid red;
+    background-color: #ffe6e6;
+    outline: none;
+    transition: 0.3s;
+}
+
+.is-invalid:focus {
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.7);
+}
+
+.is-invalid .ck-editor__editable {
+    border: 2px solid red !important;
+    background-color: #ffe6e6 !important;
+    transition: 0.3s;
+}
+
+.error-feedback {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+

@@ -1,0 +1,42 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+}
+.pagination nav {
+    background-color: transparent;
+    width: 100%;
+    top: 90%;
+    font-family: 'Silkscreen', serif;
+    padding: 10px;
+    position: relative;
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+}
+
+.pagination a,
+.pagination span {
+    padding: 10px 20px;
+    border: 3px solid rgb(18, 81, 60);
+    border-radius: 5px;
+    margin: 0 5px;
+    text-decoration: none;
+    background-color: rgba(209, 251, 208, 0.704);
+    color: rgb(18, 81, 60);
+    font-weight: bold;
+}
+
+.pagination a:hover {
+    background-color: rgb(241, 254, 249);
+    color: rgb(25, 124, 90);
+}
+
+.pagination .cursor-default {
+    color: rgba(149, 143, 143, 0.54);
+    border: 3px solid rgba(149, 143, 143, 0.54);
+}

@@ -1,0 +1,173 @@
+table {
+    width: 95%;
+    font-size: 17px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.147), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgba(255, 255, 255, 0.63);
+    border: 1px solid rgb(18, 81, 60);
+    border-radius: 20px;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+thead {
+    background-color: rgb(18, 81, 60);
+    color: #ffffff;
+    font-family: 'Silkscreen', serif;
+    text-align: center;
+}
+
+th,
+td {
+    padding: 20px 15px;
+    border: 1px solid rgb(18, 81, 60);
+}
+
+th p {
+    border-radius: 9px;
+    padding: 12px;
+    margin: 0;
+    background-color: rgb(0, 125, 83);
+}
+
+.quartiles {
+    text-align: center;
+    font-family: 'Silkscreen', serif;
+    font-size: 20px;
+}
+
+.ecs {
+    text-align: center;
+}
+
+.cell {
+    text-align: center;
+    font-style: italic;
+}
+
+.grades {
+    text-align: center;
+}
+
+/* Buttons and input boxes for the grades styling*/
+
+input[type=text] {
+    padding: 5px 5px;
+    margin: 8px 0;
+    width: 50%;
+}
+
+button {
+    padding: 6px;
+    margin: 8px;
+    width: 65%;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background-color: rgb(0, 125, 83);
+    font-family: 'Silkscreen', serif;
+    border-radius: 3px;
+    border: none;
+}
+
+button:hover {
+    background-color: rgba(0, 125, 83, 0.718);
+}
+
+/* Title of the page */
+#course-structure {
+    margin: 40px;
+    font-family: 'Silkscreen', serif;
+    text-align: center;
+}
+
+.progress-bar {
+    position: relative;
+    width: 80%;
+    height: 40px;
+    border: 3px solid rgb(18, 81, 60);
+    border-radius: 20px;
+    margin-left: 10%;
+    margin-bottom: 30px;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: rgb(0, 125, 83);
+    width: 75%;
+    border-radius: 17px;
+}
+
+.progress-bar-value p {
+    margin: 0;
+    padding: 0;
+}
+
+.progress-bar-value #pass {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    margin-left: 69%;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.progress-bar-value #max {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    margin-left: 94%;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* Subtitle 1 */
+
+#study-monitor {
+    font-size: 25px;
+    margin: 0 0 20px;
+    text-align: center;
+    font-family: 'Silkscreen', serif;
+}
+
+/* Subtitle 2 */
+
+#requirements {
+    font-size: 20px;
+    font-style: italic;
+    margin: 0;
+    text-align: center;
+}
+
+#empty-db {
+    text-align: center;
+    height: 100vh;
+}
+
+.date-picker {
+    background-color: rgba(233, 255, 237, 0.72);
+    border: 2px solid rgba(0, 125, 83, 0.718);
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 16px;
+    color: rgba(0, 125, 83, 0.718);
+    transition: all 0.3s ease;
+}
+
+.date-picker:focus {
+    outline: none;
+    border-color: rgba(0, 125, 83, 0.718);
+    background-color: #c8e6c9;
+}
+
+.date-picker:hover {
+    background-color: #c5e6c8;
+}
+
+.date-picker::placeholder {
+    color: #81c784;
+}
